@@ -1,0 +1,40 @@
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    height: 100vh;
+}
+
+
+.Movie {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    width: 200px;
+    height: 400px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Movie h1 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.Movie img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.Movie p {
+    margin: 0;
+    color: #555;
+}
