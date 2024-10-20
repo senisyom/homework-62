@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import './Home.css'
 
 const Home = () => {
   return (
@@ -11,28 +12,48 @@ const Home = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                <NavLink className="" to="/">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/"
+                >
                   Home
                 </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link active" href="">
-                <NavLink className="" to="/TopMovies">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/TopMovies"
+                >
                   Top Movies
                 </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link active" href="">
-                <NavLink className="" to="/Actors">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/Actors"
+                >
                   Actors
                 </NavLink>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-disabled="true">
-                <NavLink className="" to="/MovieBar">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/MovieBar"
+                >
                   Portfolio
                 </NavLink>
               </a>

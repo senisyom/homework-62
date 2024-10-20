@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { IMovie } from "../../types";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import MovieInput from "../../components/MovieInput/MovieInput";
+import NavBar from "../NavBar/NavBar";
 
 const MovieBar = () => {
   const [movies, setMovies] = useState<IMovie[]>([
@@ -42,7 +43,9 @@ const MovieBar = () => {
 
   return (
     <div className="container">
-      <div className="Movies">
+      <NavBar />
+      <hr />
+      <div className="Movies mt-5">
         <MovieInput
           title="Enter movie title"
           onClick={addOneCard}

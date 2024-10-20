@@ -58,9 +58,8 @@ const NavBar = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/TopMovies" element={<TopMovies movies={movies} />} />
-              <Route path="/Actors" element={<Actors actors={actors} />} />
-              <Route path="/MovieBar" element={<MovieBar/>} />
-              
+        <Route path="/Actors" element={<Actors actors={actors} />} />
+        <Route path="/MovieBar" element={<MovieBar />} />
       </Routes>
     </div>
   );
